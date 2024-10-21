@@ -1,0 +1,163 @@
+/* :::::::::::::::::::::::::::::::::::::::::::::: */
+/* reset & common code start here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: var(--bg-clr);
+}
+a{
+    text-decoration: none;
+}
+.container{
+    margin: 1% 7%;
+
+}
+:root{
+    --bg-clr:#FFFFFF;
+    --contentbg--clr:#f6f6f6;
+    --text-clr:#010101;
+    --primary-clr:#1e90ff;
+    --secondary-clr:#6A197D;
+    
+
+
+
+    --box--shadow:-7px -7px 17px #fff,
+                7px 7px 17px rgba(70, 70, 70, 0.15);
+}
+.border-box{
+    border: 1px solid #f7f7f7;
+    border-radius: 10px;
+    box-shadow: -7px -7px 17px #fff,
+                7px 7px 17px rgba(70, 70, 70, 0.15);
+}
+
+/* reset & common code start here */
+/* :::::::::::::::::::::::::::::::::::::::::::::: */
+
+/* Header part start here */
+.logo h3{
+    font-size: 30px;
+    text-transform: capitalize;
+    color: var(--text-clr);
+}
+.logo h3 b{
+    color: var(--primary-clr);
+}
+nav{
+    width: 100%;
+    background: var(--contentbg--clr);
+    display: flex;
+    justify-content: space-between;
+}
+.navbar{
+    list-style: none;
+    margin: auto 0;
+    display: flex;
+}
+.navbar li{
+    margin: 0 1rem;
+
+    display: flex;
+}
+.navbar li a{
+    /* display: flex; */
+    font-size: 20px;
+    color: var(--text-clr);
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding: 8px 12px;
+}
+.navbar li:hover a{
+    color: var(--bg-clr);
+    background: var(--primary-clr);
+}
+.bar{
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    background: var(--bg-clr);
+    font-size: 35px;
+    color: var(--primary-clr);
+    transition: .6s;
+}
+.bar i{
+    
+}
+.bar:hover{
+    color: var(--text-clr);
+    cursor: pointer;
+}
+.bar{
+    display: none;
+}
+
+
+
+/* Header part ends here */
+/* :::::::::::::::::::::::::::::::::::::::::::::: */
+
+
+
+
+@media screen and (max-width: 1200px){
+    nav{
+        display: block;
+    }
+    .logo{
+        display: inline-block;
+        margin: 20px 50px;
+        text-align: center;
+    }
+    .navbar{
+        display: block;
+        width: 100%;
+    }
+    .navbar li{
+        position: relative;
+        margin: 10px 0;
+        
+    }
+    .navbar li a{
+        width: 90%;
+        text-align: center;
+        font-size: 20px;
+        display: block;
+        border-radius: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: relative;
+    }
+    
+}
+
+@media screen and (max-width: 992px){
+    
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+}
+
+@media screen and (max-width: 768px){
+    nav{
+        display: flex;
+    }
+    .bar{
+        display: block;
+    }
+    .navbar{
+        display: none;
+    }
+}
+@media screen and (max-width: 576px){
+    
+}
