@@ -87,9 +87,9 @@ nav{
     color: var(--primary-clr);
     transition: .6s;
 }
-.bar i{
+/* .bar i{
     
-}
+} */
 .bar:hover{
     color: var(--text-clr);
     cursor: pointer;
